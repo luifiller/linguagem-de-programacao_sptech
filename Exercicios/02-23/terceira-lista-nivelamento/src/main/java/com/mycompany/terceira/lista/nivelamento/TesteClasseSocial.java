@@ -15,12 +15,10 @@ public class TesteClasseSocial {
         System.out.println("Digite sua renda: ");
         Double renda = leitor.nextDouble();
         
-        
-        
         Double qtdSalarioMinimo = classeSocial.calcularEretornarQtdSalarioMinimo(renda);
-        String identificacaoClasseSocial = classeSocial.identificarClasseSocial(renda);
+        String identificacaoClasseSocial = classeSocial.identificarClasseSocial(qtdSalarioMinimo);
         
-        System.out.println(String.format("Você recebe aproximadamente: %.2f \n "
-                + "Você pertence a classe social: %s salários-mínimos.", qtdSalarioMinimo, identificacaoClasseSocial));
+        System.out.println(String.format("Você recebe aproximadamente: %.2f salários-mínimos. \n "
+                + "Você pertence a classe social: %s ", qtdSalarioMinimo, identificacaoClasseSocial));
     }
 }

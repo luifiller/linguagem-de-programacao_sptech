@@ -10,16 +10,19 @@ public class ClasseSocial {
     }
     
     String identificarClasseSocial(Double qtdSalarioMinimo){
+        String frase;
+        
         if (qtdSalarioMinimo <= 2) {
-            return "E";
+            frase = "E";
         } else if  (qtdSalarioMinimo <= 4){
-            return "D";
+            frase = "D";
         } else if  (qtdSalarioMinimo <= 10){
-            return "C";
-        } else if (qtdSalarioMinimo <= 20900.){
-            return "B";
+            frase = "C";
+        } else if (qtdSalarioMinimo <= 20){
+            frase = "B";
         } else {
-            return "A";
+            frase = "A";
         }
+        return frase;
     }
 }
