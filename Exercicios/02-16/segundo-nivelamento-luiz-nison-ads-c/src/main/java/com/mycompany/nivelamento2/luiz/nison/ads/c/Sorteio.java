@@ -12,7 +12,7 @@ public class Sorteio {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
 
-        Integer indice = 0;
+        Integer indice = 1;
         Integer cont = 0;
         Integer totalNumeroPar = 0;
         Integer totalNumeroImpar = 0;
@@ -30,11 +30,11 @@ public class Sorteio {
         }
 
         Integer primeiraAparicaoNumeroDigitado = 0;
-        while (indice < 200) {
+        while (indice <= 200) {
             Integer numeroSorteado = ThreadLocalRandom.current().nextInt();
 
             if (cont <= 0) {
-                if (numeroSorteado.equals(numeroDigitado)) {
+                if (numeroSorteado.equals(numeroDigitado) && primeiraAparicaoNumeroDigitado == 0) {
                     primeiraAparicaoNumeroDigitado = indice;
 
                     cont++;
@@ -49,9 +49,11 @@ public class Sorteio {
             indice++;
         }
 
-        System.out.println("A 1ª aparição do número que você "
-                + "digitou foi: " + primeiraAparicaoNumeroDigitado
-        ); 
+        if (primeiraAparicaoNumeroDigitado != 0) {
+            System.out.println("A 1ª aparição do número que você "
+                    + "digitou foi: " + primeiraAparicaoNumeroDigitado
+            );
+        }
 
         System.out.println("Foram sorteados " + totalNumeroPar
                 + " números pares."
