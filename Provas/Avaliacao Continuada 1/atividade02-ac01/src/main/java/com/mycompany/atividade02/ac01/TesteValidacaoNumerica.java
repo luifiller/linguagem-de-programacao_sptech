@@ -17,6 +17,11 @@ public class TesteValidacaoNumerica {
             System.out.println("Digite um número inteiro positivo: ");
             numeroDigitado = leitor.nextInt();
             
+            if (numeroDigitado < 0){
+                System.out.println("O número é negativo! Encerrando programa");
+                break;
+            }
+            
             validaNumeroPrimo.verificarPrimo(numeroDigitado);
         } while (numeroDigitado > 0);
     }
