@@ -18,7 +18,7 @@ public class TesteClasseSocial {
         Double qtdSalarioMinimo = classeSocial.calcularEretornarQtdSalarioMinimo(renda);
         String identificacaoClasseSocial = classeSocial.identificarClasseSocial(qtdSalarioMinimo);
         
-        System.out.println(String.format("Você recebe aproximadamente: %.2f salários-mínimos. \n "
+        System.out.println(String.format("Você recebe aproximadamente: %.1f salários-mínimos. \n "
                 + "Você pertence a classe social: %s ", qtdSalarioMinimo, identificacaoClasseSocial));
     }
 }
