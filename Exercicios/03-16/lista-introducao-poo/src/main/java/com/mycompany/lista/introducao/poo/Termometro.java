@@ -16,6 +16,8 @@ public class Termometro {
         if (valorAumentoTemperatura > 0) {
             if (temperaturaAumentada > temperaturaMax) {
                 temperaturaAtual = temperaturaMax;
+            } else {
+                temperaturaAtual = temperaturaAumentada;
             }
         } else {
             System.out.println("Insira um valor maior que 0 para "
@@ -31,6 +33,8 @@ public class Termometro {
         if (valorDiminuiTemperatura > 0) {
             if (temperaturaDiminuida > temperaturaMax) {
                 temperaturaAtual = temperaturaMin;
+            } else {
+                temperaturaAtual = temperaturaDiminuida;
             }
         } else {
             System.out.println("Insira um valor maior que 0 para "
@@ -47,6 +51,6 @@ public class Termometro {
                 temperaturaAtual));
         
         System.out.println(String.format("Temperatura atual em "
-                + "Fahreinheit: %.2f", temperaturaFahreinheit));
+                + "Fahreinheit: %.2fºF", temperaturaFahreinheit));
     }
 }
