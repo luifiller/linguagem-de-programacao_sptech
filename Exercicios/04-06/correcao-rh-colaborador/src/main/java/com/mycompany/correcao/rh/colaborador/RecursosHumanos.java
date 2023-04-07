@@ -6,8 +6,13 @@ package com.mycompany.correcao.rh.colaborador;
  */
 public class RecursosHumanos {
 
-    private Integer totalPromocoes = 0;
-    private Integer totalSalariosReajustados = 0;
+    private Integer totalPromocoes;
+    private Integer totalSalariosReajustados;
+
+    public RecursosHumanos() {
+        this.totalPromocoes = 0;
+        this.totalSalariosReajustados = 0;
+    }
 
     public void reajustarSalario(Colaborador colaborador, Double valorReajuste) {
         Double novoSalario = colaborador.getSalario() + valorReajuste;
@@ -31,13 +36,6 @@ public class RecursosHumanos {
         }
     }
 
-    public void exibirColaborador(Colaborador colaborador) {
-        System.out.println(String.format("Nome: %s \n"
-                + "Cargo: %s \n"
-                + "Salario: %.2f \n", colaborador.getName(), colaborador.getCargo(), colaborador.getSalario()));
-
-    }
-
     public Integer getTotalPromocoes() {
         return totalPromocoes;
     }
@@ -45,4 +43,11 @@ public class RecursosHumanos {
     public Integer getTotalSalariosReajustados() {
         return totalSalariosReajustados;
     }
+
+    @Override
+    public String toString() {
+        return "RecursosHumanos{" + "totalPromocoes=" + totalPromocoes + ", totalSalariosReajustados=" + totalSalariosReajustados + '}';
+    }
+    
+    
 }
