@@ -11,9 +11,15 @@ public class TesteAtividade {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
 
-        Atividade atividade01 = new Atividade("Pull request", "Luiz Nison", 5);
-        Atividade atividade02 = new Atividade("Merge", "Luiz Nison", 2);
-        Atividade atividade03 = new Atividade("Create branch 'wip-001-dashboard'", "Luiz Nison", 1);
+        Atividade atividade01 = new Atividade("Pull request", 
+                    "Luiz Nison", 
+                    5);
+        Atividade atividade02 = new Atividade("Merge", 
+                    "Luiz Nison", 
+                    2);
+        Atividade atividade03 = new Atividade("Create branch 'wip-001-dashboard'", 
+                    "Luiz Nison", 
+                    1);
 
         System.out.println("Digite a quantidade de dias usados: ");
         Integer diasUsados01 = leitor.nextInt();

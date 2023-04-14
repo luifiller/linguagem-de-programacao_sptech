@@ -1,4 +1,4 @@
-package com.mycompany.ac2.segunda.atividade;
+package com.mycompany.ac2.segunda.atividade.petshop;
 
 /**
  *

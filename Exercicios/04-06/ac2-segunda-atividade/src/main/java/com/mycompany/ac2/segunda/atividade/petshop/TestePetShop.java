@@ -1,4 +1,7 @@
-package com.mycompany.ac2.segunda.atividade;
+package com.mycompany.ac2.segunda.atividade.petshop;
+
+import com.mycompany.ac2.segunda.atividade.petshop.PetShop;
+import com.mycompany.ac2.segunda.atividade.petshop.Pet;
 
 /**
  *
