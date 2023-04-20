@@ -10,7 +10,7 @@ public class Bolo {
     Double valor;
     Integer quantidadeVendida;
 
-    void comprarBolo(Integer quantidadeDesejada) {
+    public void comprarBolo(Integer quantidadeDesejada) {
         Integer quantidadeTotal = quantidadeVendida + quantidadeDesejada;
         
         if (quantidadeTotal > 100) {
@@ -20,7 +20,7 @@ public class Bolo {
         }
     }
     
-    void exibirRelatorio() {
+    public void exibirRelatorio() {
         Double dinheiroTotalRecebido = quantidadeVendida * valor;
         System.out.println(String.format("O bolo sabor %s, foi "
                 + "comprado %d vezes hoje, totalizando R$%.2f", sabor,
