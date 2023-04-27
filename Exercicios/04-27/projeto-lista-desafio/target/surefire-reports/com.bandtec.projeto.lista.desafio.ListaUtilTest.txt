@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Teste classe ListaUtil
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in com.bandtec.projeto.lista.desafio.ListaUtilTest
