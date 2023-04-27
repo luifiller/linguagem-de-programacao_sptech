@@ -12,10 +12,10 @@ public class TesteCarro {
     public static void main(String[] args) {
         List<Carro> carros = new ArrayList();
 
-        carros.add(new Carro("Uno", "Fiat", 2015, 70000.00));
-        carros.add(new Carro("Agile", "Chevrolet", 2017, 90000.00));
-        carros.add(new Carro("Prisma", "Chevrolet", 2010, 13000.00));
-        carros.add(new Carro("Fiesta", "Ford", 2020, 85000.00));
+        carros.add(new Carro("Uno", "Fiat", 2015, 70_000.00));
+        carros.add(new Carro("Agile", "Chevrolet", 2017, 90_000.00));
+        carros.add(new Carro("Prisma", "Chevrolet", 2010, 13_000.00));
+        carros.add(new Carro("Fiesta", "Ford", 2020, 85_000.00));
 
         System.out.println("Carros com ano maior que 2018: ");
         for (int i = 0; i < carros.size(); i++) {
@@ -26,7 +26,7 @@ public class TesteCarro {
 
         System.out.println("Carros com valor menor que R$60.000,00: ");
         for (int i = 0; i < carros.size(); i++) {
-            if (carros.get(i).getValor() < 60000.00) {
+            if (carros.get(i).getValor() < 60_000.00) {
                 System.out.println(carros.get(i));
             }
         }

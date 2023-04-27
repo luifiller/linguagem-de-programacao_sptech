@@ -31,7 +31,7 @@ public class Frutas {
             String frutaDaVez = frutas.get(i).toLowerCase();
 
             if (frutaDaVez.equals(frutaBuscada)) {
-                cont++;
+                cont = 1;
             }
         }
 
