@@ -30,10 +30,10 @@ public class TesteConcessionaria {
         conc.aumentarEstoque(veiculo01, 3);
         conc.aumentarEstoque(veiculo01, 2);
 
-        veiculo01.setValorTabela(1000.00);
+        veiculo01.setValorTabela(1000.50);
 
         conc.aumentarEstoque(veiculo02, 3);
-        veiculo02.setValorTabela(2500.00);
+        veiculo02.setValorTabela(2500.80);
 
         System.out.println("--------------------Infos dos Veículos----------------------\n");
         System.out.println(veiculo01);
