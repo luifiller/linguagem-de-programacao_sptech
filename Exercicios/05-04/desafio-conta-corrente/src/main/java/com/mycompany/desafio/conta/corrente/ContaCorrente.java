@@ -72,10 +72,6 @@ public class ContaCorrente {
                 }
             }
 
-            if (!valorValido) {
-                System.out.println("Valor inválido. \n");
-            }
-
             if (!anoValido) {
                 System.out.println("Ano inválido. \n");
             }
@@ -127,7 +123,6 @@ public class ContaCorrente {
                 + "Saldo: R$%.2f \n"
                 + "Histórico: %s \n"
                 + "---------------------------- \n", titular, saldo, historico);
-//                "ContaCorrente{" + "titular=" + titular + ", saldo=" + saldo + ", historico=" + historico + '}';
     }
 
 }
